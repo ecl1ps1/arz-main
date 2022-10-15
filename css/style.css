@@ -324,10 +324,9 @@ footer .footer__links > div a {
   padding-bottom: 20px;
 }
 
-@media (max-width: 2400px) {
+@media (max-width: 1500px) {
   .main-block-img {
     display: none !important;
-    width: 0px !important;
   }
 
   .main-row {
@@ -335,34 +334,75 @@ footer .footer__links > div a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: 15%;
   }
 
   .disabling-system {
-    margin-top: 60px !important;
+    margin-top: 60px;
+  }
+}
+@media (max-width: 350px) {
+  .main-row {
+    margin-left: 30px;
   }
 
-  .container {
-    width: 1000px !important;
+  .setting-block-input {
+    margin-left: 60px;
+    margin-right: 60px;
   }
 
   .setting-block {
-    width: 90% !important;
+    width: 650px;
+  }
+}
+@media (max-width: 350px) {
+  .main-row {
+    margin-left: 0;
+  }
+
+  .setting-block-input {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 55px;
+  }
+
+  .setting-block {
+    width: 500px;
+  }
+
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
-}
-@media (max-width: 230px) {
-  .setting-block {
-    width: 60% !important;
+
+  div.setting-block.information > div:nth-child(4) > p,
+div.setting-block.information > div:nth-child(2) > p {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+
+  .setting-block-input-p {
+    text-align: end;
+  }
+
+  div.setting-block.close-channels > div:nth-child(3) > a,
+div.setting-block.close-channels > div:nth-child(2) > a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  div.setting-block.disabling-system > div.setting-block-input > p {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
   }
 }

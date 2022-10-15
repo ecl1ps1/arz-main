@@ -267,30 +267,60 @@ footer {
   margin-top: 23px;
   padding-bottom: 20px;
 }
-@media (max-width: 2400px) {
+@media (max-width: 1500px) {
   .main-block-img {
     display: none !important;
-    width: 0px !important;
   }
   .main-row {
     flex-direction: column;
+    margin-left: 15%;
   }
   .disabling-system {
-    margin-top: 60px !important;
-  }
-  .container {
-    width: 1000px !important;
-  }
-  .setting-block {
-    width: 90% !important;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+    margin-top: 60px;
   }
 }
-@media (max-width: 230px) {
+@media (max-width: 350px) {
+  .main-row {
+    margin-left: 30px;
+  }
+  .setting-block-input {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
   .setting-block {
-    width: 60% !important;
+    width: 650px;
+  }
+}
+@media (max-width: 350px) {
+  .main-row {
+    margin-left: 0;
+  }
+  .setting-block-input {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 55px;
+  }
+  .setting-block {
+    width: 500px;
+  }
+  .form {
+    display: flex;
     align-items: center;
+    justify-content: center;
+  }
+
+  div.setting-block.information > div:nth-child(4) >p,
+  div.setting-block.information > div:nth-child(2) > p {
+  align-items: end;
+  }
+  .setting-block-input-p {
+    text-align: end;
+  }
+  div.setting-block.close-channels > div:nth-child(3) > a,
+  div.setting-block.close-channels > div:nth-child(2) > a {
+    align-items: center;
+  }
+  div.setting-block.disabling-system > div.setting-block-input > p {
+    align-items: end;
   }
 }
